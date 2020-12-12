@@ -4,6 +4,7 @@ name: RedHat 7
 on:
   push:
     branches:
+      - '!master'
       - 7
   schedule:
     - cron: '0 1 * * 1'
