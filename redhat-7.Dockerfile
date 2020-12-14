@@ -4,7 +4,7 @@ LABEL maintainer="Dennis Hoppe"
 
 ENV container=docker
 
-RUN yum make cache fast ; \
+RUN yum makecache fast ; \
     yum upgrade -y ; \
     yum install -y \
         deltarpm \
