@@ -27,7 +27,9 @@ jobs:
           registry: registry.redhat.io
           username: "${{ secrets.REDHAT_USERNAME }}"
           password: "${{ secrets.REDHAT_PASSWORD }}"
-      - name: Docker Buildx (prepare)
+      - name: Docker Buildx (qemu)
+        uses: docker/setup-qemu-action@v1
+      - name: Docker Buildx (buildkit)
         uses: docker/setup-buildx-action@v1
       - name: Docker Buildx (build)
         run: |
