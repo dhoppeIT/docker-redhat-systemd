@@ -3,7 +3,7 @@ repository:
   name: docker-redhat-systemd
   description: RedHat image including Systemd
   homepage: https://hub.docker.com/repository/docker/dhoppeit/docker-redhat-systemd/
-  topics: docker, buildx, redhat-7, amd64
+  topics: docker, buildx, redhat-7, redhat-8, amd64, arm64
   private: false
   has_issues: true
   has_projects: false
